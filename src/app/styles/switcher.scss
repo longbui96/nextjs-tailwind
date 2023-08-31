@@ -1,0 +1,8 @@
+.switcher {
+  .switcher-label {
+    @apply flex;
+    @apply items-center;
+    @apply gap-1;
+    @apply inline-block;
+  }
+}

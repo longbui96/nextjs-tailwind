@@ -1,0 +1,24 @@
+.ib-collapse {
+  // rounded-lg border border-gray-200
+  & > .collapse-item {
+    @apply border;
+    @apply border-gray-200;
+  }
+  & > .collapse-item:not(:first-child) {
+    @apply border-t-0;
+  }
+  & > .collapse-item:first-of-type {
+    @apply rounded-t-lg;
+  }
+  & > .collapse-item:last-of-type {
+    @apply rounded-b-lg;
+  }
+
+  .collapse-item {
+    .item-content {
+      & > * {
+        @apply p-3;
+      }
+    }
+  }
+}
